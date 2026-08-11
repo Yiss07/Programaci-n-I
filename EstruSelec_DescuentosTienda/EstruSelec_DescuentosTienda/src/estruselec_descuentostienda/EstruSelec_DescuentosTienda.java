@@ -59,7 +59,7 @@ public class EstruSelec_DescuentosTienda {
                 System.out.printf("\nTotal a pagar: %.2f\n",total);
             }//else descuento mayor de edad
                 }//Fin If MAYOR DE EDAD
-        if(edad<=18){
+        if(edad<18){
             if(edad>=12 && membresia == 'S'||membresia == 's'){
                 
                 preciDescuento = preciOriginal * descuentoMedio;
