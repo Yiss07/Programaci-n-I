@@ -41,7 +41,7 @@ public class EstruSelec_DescuentosTienda {
             
         System.out.println("Tiene membresia? Si/No");
         membresia = input.nextLine().charAt(0);
-        if (edad>18){
+        if (edad>=18){
             if(edad>=65 || membresia =='S'|| membresia =='s'){
                
                 preciDescuento = (preciOriginal * descuentoMayor);
@@ -59,7 +59,7 @@ public class EstruSelec_DescuentosTienda {
                 System.out.printf("\nTotal a pagar: %.2f\n",total);
             }//else descuento mayor de edad
                 }//Fin If MAYOR DE EDAD
-        if(edad<18){
+        if(edad<=18){
             if(edad>=12 && membresia == 'S'||membresia == 's'){
                 
                 preciDescuento = preciOriginal * descuentoMedio;
